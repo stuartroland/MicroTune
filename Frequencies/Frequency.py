@@ -6,8 +6,8 @@ Frequency Class
 Base class for musical frequencies. Can be operated upon with intervals. Can represent notes in Hz or beats in BPM.
 """
 
-import Interval
-import Scalar
+import Intervals.Interval as Interval
+import Intervals.Scalar as Scalar
 
 
 class Frequency:
@@ -71,7 +71,7 @@ class Frequency:
         elif type(other) == float or type(other) == int:
             return Frequency(float(self) - other)
         elif isinstance(other, Frequency):
-            Scalar.Scalar((self.getFreq()-other.getFreq())/self.getFreq())
+            Scalar.Scalar((self.getFreq() - other.getFreq()) / self.getFreq())
 
     def __mul__(self, other):
         if type(other) == float or type(other) == int:

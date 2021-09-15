@@ -6,9 +6,9 @@ Frequency Class
 Class for storing tempos as BPM frequency values. Can be operated upon with intervals.
 """
 
-import Frequency
-import Interval
-import Scalar
+import Frequencies.Frequency as Frequency
+import Intervals.Interval as Interval
+import Intervals.Scalar as Scalar
 
 
 class BPM(Frequency.Frequency):
@@ -58,7 +58,7 @@ class BPM(Frequency.Frequency):
         elif type(other) == float or type(other) == int:
             return BPM(self.getBpm() - other)
         elif isinstance(other, Frequency.Frequency):
-            Scalar.Scalar((self.getBpm()-other.getBpm())/self.getBpm())
+            Scalar.Scalar((self.getBpm() - other.getBpm()) / self.getBpm())
 
     def __mul__(self, other):
         if type(other) == float or type(other) == int:

@@ -9,8 +9,7 @@ Can edit the temperament/scale, what degrees comprise the scale, and what refere
 Can load or write the temp/scale to .scl Scala scale files for compatibility with thousands of temperaments and scales.
 """
 
-import Temperament
-import Hz
+import Frequencies.Hz as Hz
 
 
 class Tuning:

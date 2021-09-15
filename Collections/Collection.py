@@ -6,10 +6,10 @@ Interval Collection
 Base class for a collection of musical intervals, stored as Ratios, Scalars, or Cents objects.
 """
 
-import Interval
-import Ratio
-import Scalar
-import Cents
+import Intervals.Interval as Interval
+import Intervals.Ratio as Ratio
+import Intervals.Cents as Cents
+import Intervals.Scalar as Scalar
 from math import log2
 
 

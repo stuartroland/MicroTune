@@ -6,7 +6,7 @@ Cents Class
 Class that is able to store musical intervals as scalar (float) values. Able to cast to cent values.
 """
 
-import Interval
+import Intervals.Interval as Interval
 
 
 class Scalar(Interval.Interval):

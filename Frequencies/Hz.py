@@ -6,9 +6,9 @@ Frequency Class
 Hertz class for musical frequencies. Can be operated upon with intervals. Represents note frequencies as Hz.
 """
 
-import Frequency
-import Interval
-import Scalar
+import Frequencies.Frequency as Frequency
+import Intervals.Interval as Interval
+import Intervals.Scalar as Scalar
 
 
 class Hz(Frequency.Frequency):
@@ -54,7 +54,7 @@ class Hz(Frequency.Frequency):
         elif type(other) == float or type(other) == int:
             return Hz(float(self) - other)
         elif isinstance(other, Frequency.Frequency):
-            Scalar.Scalar((self.getHz()-other.getHz())/self.getHz())
+            Scalar.Scalar((self.getHz() - other.getHz()) / self.getHz())
 
     def __mul__(self, other):
         if type(other) == float or type(other) == int:

@@ -13,9 +13,9 @@ TODO
     -implement into both the setRatio as well as the operations 
 """
 
-import Interval
-import Cents
-import Scalar
+import Intervals.Interval as Interval
+import Intervals.Cents as Cents
+import Intervals.Scalar as Scalar
 
 
 class Ratio(Interval.Interval):

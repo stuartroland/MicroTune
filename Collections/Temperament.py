@@ -10,10 +10,10 @@ Works with Ratios, Scalars, and Cents.
 Can load or write to .scl Scala scale files for compatibility with thousands of temperaments and scales.
 """
 
-import Collection
-import Ratio
-# import Scalar
-import Cents
+import Collections.Collection as Collection
+
+
+# import Intervals.Scalar as Scalar
 
 
 class Temperament(Collection.Collection):

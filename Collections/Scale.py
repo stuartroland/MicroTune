@@ -8,9 +8,8 @@ Can edit the underlying temperament or what degrees comprise the scale.
 Can load or write to .scl Scala scale files for compatibility with thousands of temperaments and scales.
 """
 
-import Temperament
-import Ratio
-import Cents
+import Collections.Temperament as Temperament
+import Intervals.Ratio as Ratio
 
 
 class Scale(Temperament.Temperament):
